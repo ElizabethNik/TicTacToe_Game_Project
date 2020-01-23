@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void chooseTeam(View view) {
         if(isPlayerOneChoice) {
-            isPlayerOneChoice = false;
+            isPlayerOneChoice = false;//When we call this method for a second time, it's player two choice
 
             view.setOnClickListener(null);
             playerOneImgRes = (Integer) view.getTag();
